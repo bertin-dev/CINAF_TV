@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="full_width_height">430dp</dimen>
+    <dimen name="logo_margin_start">50dp</dimen>
+
+    <dimen name="genre_corner">12dp</dimen>
+    <dimen name="half_padding">8dp</dimen>
+    <dimen name="full_padding">16dp</dimen>
+
+    <dimen name="lb_details_v2_card_height">430dp</dimen>
+
+    <dimen name="default_image_card_width">224dp</dimen>
+    <dimen name="default_image_card_height">126dp</dimen>
+
+
+    <dimen name="default_badge_corner_radii">16dp</dimen>
+    <dimen name="default_corner_radii">56dp</dimen>
+    <dimen name="default_icon_size">24dp</dimen>
+    <dimen name="default_nav_item_badge_padding">2dp</dimen>
+    <dimen name="default_nav_item_badge_text_size">7sp</dimen>
+    <dimen name="default_nav_item_padding">12dp</dimen>
+    <dimen name="default_nav_item_text_padding">8dp</dimen>
+    <dimen name="default_nav_item_text_size">14sp</dimen>
+    <dimen name="default_nav_item_title_max_width">80dp</dimen>
+
+    <dimen name="spinner_width">50dp</dimen>
+    <dimen name="spinner_height">50dp</dimen>
+
+    <dimen name="card_width">156dp</dimen>
+    <dimen name="card_height">88dp</dimen>
+</resources>

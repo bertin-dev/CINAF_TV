@@ -1,0 +1,15 @@
+{
+  "title": "Paramètres",
+  "cards": [
+      {
+        "type": "ICON",
+        "title": "Langue",
+        "localImageResource": "ic_language"
+      },
+      {
+        "type": "ICON",
+        "title": "A Propos",
+        "localImageResource": "ic_info_about"
+      }
+    ]
+}

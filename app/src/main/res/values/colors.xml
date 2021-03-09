@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#d6000000</color>
+    <color name="primary_dark">#05151b</color>
+    <color name="primary_transparent">#BF081c24</color>
+    <color name="primary_dark_transparent">#BF05151b</color>
+    <color name="accent_color">#01d277</color>
+
+
+
+    <color name="colorPrimary">#ffa100</color>
+    <color name="colorPrimaryDark">#ffa100</color>
+    <color name="colorAccent">#ffa100</color>
+
+    <color name="black">#000000</color>
+    <color name="gray">#333333</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="primary_text">#212121</color>
+    <color name="white_text">#BDBDBD</color>
+    <color name="dark_gray">#111111</color>
+    <color name="green">#388e3c</color>
+    <color name="red">#d32f2f</color>
+    <color name="pruple">#7b1fa2</color>
+    <color name="yellow">#ffa100</color>
+    <color name="orange">#ff6d00</color>
+
+
+    <color name="red_bg_light">#312c2d</color>
+    <color name="yellow_bg_light">#31302c</color>
+    <color name="orange_bg_light">#312e2c</color>
+    <color name="pruple_bg_light">#2f2c31</color>
+    <color name="green_bg_light">#552c312c</color>
+    <color name="blue_fb">#0084ff</color>
+
+    <color name="app_guidedstep_dialog_actions_background">#263238</color>
+
+
+
+    <color name="default_badge_background_color">#f44336</color>
+    <color name="default_badge_text_color">#ffffff</color>
+    <color name="default_inactive_color">#212121</color>
+    <color name="default_inactive_shape_color">#e5e5e5</color>
+    <color name="default_shape_inactive_color">#888888</color>
+    <color name="default_color">#FF263238</color>
+
+    <color name="default_background">#0096a6</color>
+    <color name="selected_background">#ffaa3f</color>
+
+</resources>

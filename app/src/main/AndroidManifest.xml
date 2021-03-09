@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cinaf.android_tv">
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="true" />
+
+    <uses-feature android:name="android.hardware.microphone"
+        android:required="false"/>
+
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />-->
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Leanback"
+        android:usesCleartextTraffic="true"
+        android:banner="@drawable/banner"
+        >
+
+        <activity
+            android:name=".ui.player.caster.PlaybackTrailerActivity"
+            android:exported="true"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation|layoutDirection"
+            android:launchMode="singleTask"
+            android:resizeableActivity="true"
+            android:theme="@style/Theme.Leanback"
+            android:supportsPictureInPicture="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.cast.tv.action.LOAD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.check_subscription.IDCode"/>
+        <activity
+            android:name=".ui.player.caster.PlaybackSerieActivity"
+            android:exported="true"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation|layoutDirection"
+            android:launchMode="singleTask"
+            android:resizeableActivity="true"
+            android:theme="@style/Theme.Leanback"
+            android:supportsPictureInPicture="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.cast.tv.action.LOAD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.player.caster.PlaybackActivity"
+            android:exported="true"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation|layoutDirection"
+            android:launchMode="singleTask"
+            android:resizeableActivity="true"
+            android:theme="@style/Theme.Leanback"
+            android:supportsPictureInPicture="true">
+
+            <intent-filter>
+                <action android:name="com.google.android.gms.cast.tv.action.LOAD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <!-- Uncomment and populate data fields to enable load by entity deeplinks -->
+            <!--
+            intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="https"/>
+                <data android:host="YOUR-DEEPLINK-HOST-URL"/>
+                <data android:pathPattern=".*"/>
+            </intent-filter
+            -->
+
+        </activity>
+        <activity
+            android:name=".ui.publish_channel.ChannelPublishActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Leanback.GuidedStep" />
+        <activity
+            android:name=".ui.check_subscription.ShowQRCode"
+            android:exported="true"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".ui.dialog.DialogActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Leanback.GuidedStep" />
+        <activity
+            android:name=".ui.player.EmbedActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation|layoutDirection"
+            android:exported="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.player.Play"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation|layoutDirection"
+            android:exported="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:banner="@drawable/banner"
+            android:icon="@drawable/logo"
+            android:label="@string/app_name"
+            android:logo="@drawable/logo"
+            android:screenOrientation="landscape" />
+        <activity android:name=".ui.search.SearchActivity" />
+        <activity
+            android:name=".ui.player.PlayerActivity"
+            android:usesCleartextTraffic="true" />
+        <activity android:name=".ui.detail.DetailActivity" />
+        <activity android:name=".ui.detail.DetailPosterActivity" />
+        <activity
+            android:name=".ui.main.SplashActivity"
+            android:banner="@drawable/banner"
+            android:icon="@drawable/logo"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:logo="@drawable/logo"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.gms.cast.tv.action.LAUNCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.cast.tv.RECEIVER_OPTIONS_PROVIDER_CLASS_NAME"
+            android:value="com.cinaf.android_tv.CastReceiverOptionsProvider" />
+    </application>
+
+</manifest>

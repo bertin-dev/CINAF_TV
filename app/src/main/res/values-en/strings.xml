@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CINAF TV</string>
+    <string name="under">-</string>
+    <string name="accueil">Home</string>
+    <string name="films">Movies</string>
+    <string name="serie">Series</string>
+    <string name="acteurs">Actors</string>
+    <string name="mesFavoris">My favourites</string>
+    <string name="parametres">Settings</string>
+    <string name="deconnexion">Logout</string>
+    <string name="contactNous">Contact us</string>
+    <string name="faqSupport">FAQ and Support</string>
+    <string name="policy">Privacy policy</string>
+    <string name="saison">Season</string>
+
+    <string name="slide">Slide</string>
+    <string name="acteurPopulaire">Popular actors</string>
+    <string name="mieuxNote">Top rated</string>
+    <string name="plusPopulaire">The most popular</string>
+    <string name="bientot">Soon</string>
+    <string name="drame">Drama</string>
+    <string name="humour">Humor</string>
+    <string name="productionCinaf">Cinaf production</string>
+    <string name="action">Action</string>
+    <string name="romance">Romance</string>
+
+    <string name="cast">Cast</string>
+    <string name="filmographie">Filmography</string>
+    <string name="casting">Casting</string>
+    <string name="recommandePourVous">Recommended for you</string>
+
+
+    <string name="favoris">Favorites</string>
+    <string name="description">Description</string>
+    <string name="biographie">Biography</string>
+    <string name="recherche">Research</string>
+
+    <string-array name="menu_list">
+        <item>@string/accueil</item>
+        <item>@string/films</item>
+        <item>@string/serie</item>
+        <item>@string/acteurs</item>
+        <item>@string/parametres</item>
+        <item>@string/deconnexion</item>
+        <item>@string/contactNous</item>
+        <item>@string/policy</item>
+    </string-array>
+
+
+    <string-array name="icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_movie</item>
+        <item>@drawable/ic_tv_show</item>
+        <item>@drawable/ic_person_24</item>
+        <item>@drawable/settings</item>
+        <item>@drawable/ic_exit_to_app_24</item>
+        <item>@drawable/ic_email</item>
+        <item>@drawable/ic_lock</item>
+    </string-array>
+
+
+    <string name="download_foler">CINAF</string>
+    <string name="panel_url">cinaf.tv</string>
+    <string-array name="orders_list">
+        <item>Last added</item>
+        <item>By rating</item>
+        <item>By IMDb rating</item>
+        <item>By title</item>
+        <item>Per year</item>
+        <item>By views</item>
+    </string-array>
+
+    <string name="media_route_menu_title">Go on about</string>
+
+    <string name="navigation_drawer_open">Open the navigation drawer</string>
+    <string name="navigation_drawer_close">Close the navigation panel</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="try_again">Refresh</string>
+    <string name="error_server">Check that your internet connection is active</string>
+    <string name="no_source_available">This feature is temporarily unavailable</string>
+    <!--    <string name="no_source_available">Aucune source vidéo disponible pour ce contenu</string>-->
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="rating_done">Your review has been sent successfully</string>
+    <string name="write_comment">To write a comment</string>
+    <string name="comment_hidden">Hidden</string>
+    <string name="now_time">Now</string>
+    <string name="off">Off</string>
+    <string name="on">On</string>
+    <string name="loading_subtitles">Subtitles … </string>
+    <string name="for_you">You might like</string>
+    <string name="search_about_actors">Find your movies and series</string>
+    <string name="account_disabled">This account has been deactivated</string>
+    <string name="operation_progress">Operations in progress, Please wait…</string>
+    <string name="get_this_movie_here">Get this movie from the link below  :</string>
+
+    <string name="get_this_serie_here">Get more series here</string>
+    <string name="get_this_channel_here">Get this channel from the link below</string>
+
+    <string name="file_has_been_downloaded">The file has been downloaded successfully</string>
+    <string name="exit">Exit the application</string>
+    <string name="policy_privacy">Terms of use</string>
+    <string name="action_rate">Evaluate the application</string>
+    <string name="action_support"><![CDATA[Report a burg and help]]></string>
+    <string name="share_this_app">Recommend the application</string>
+    <string name="my_profile">My profile</string>
+    <string name="Logout">Logout</string>
+    <string name="login">login</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="later">Later</string>
+    <string name="please_login">Sign into your account</string>
+    <string name="message_logout">You have been disconnected</string>
+    <string name="hint_name">Full Name</string>
+    <string name="update_my_profile">Edit my profile</string>
+    <string name="error_short_value">This value very short please enter correct value</string>
+    <string name="infos_updated_successfully">your infos has been updated successfully</string>
+    <string name="rate_this_channel">Rate this channel</string>
+    <string name="rate_this_serie_tv">Rate this Serie</string>
+    <string name="rate_this_movie">Rate this movie</string>
+    <string name="website">Website</string>
+    <string name="update_now">Update</string>
+    <string name="notif_now">Contact us</string>
+    <string name="skip">Ignore</string>
+    <string name="title_notification">Activate notifications</string>
+    <string name="label_notification">Receive notifications</string>
+    <string name="clear_cache">Delete Cache</string>
+    <string name="label_cache">Clear cached images. </string>
+    <string name="whatsapp_us">Contact us via Whatsapp</string>
+    <string name="contact_us">Send us a message</string>
+    <string name="version_label">Version</string>
+    <string name="enable_subtitles">Activate subtitles</string>
+    <string name="hint_email">E-mail</string>
+    <string name="hint_message">Your message</string>
+    <string name="send_support">Send the message</string>
+    <string name="message_sended">message sent successfully</string>
+    <string name="error_mail_valide">Please enter a valid E-mail</string>
+
+    <string name="title_slide_1">Welcome to CINAF</string>
+    <string name="description_slide_1">Thanks for downloading CINAF, enjoy this amazing android app with cool contents  .</string>
+
+    <string name="title_slide_2">Watch it all here</string>
+    <string name="description_slide_2">Watch all content in one place: movies, series and more </string>
+
+    <string name="title_slide_3">Use subtitles</string>
+    <string name="description_slide_3">Watch your favorite movies and series in your original language</string>
+
+    <string name="title_slide_4">Download and watch later</string>
+    <string name="description_slide_4">Download movies / series, keep it on your device to watch it later</string>
+
+    <string name="title_slide_5">Watch on the big screen</string>
+    <string name="description_slide_5">Stream any movie / series content to your TV and watch them in comfort</string>
+
+    <string name="dialog_text_no_ads_title">Turn Off ads</string>
+    <string name="dialog_text_no_ads_description">Use App more free without ads</string>
+    <string name="description_subsribte">With our packs. You can enjoy ad-free experience. and concentrate on the essentials!</string>
+    <string name="download_premium_content">Become Premium and enjoy offline</string>
+    <string name="play_premium_content">Play Premium content</string>
+    <string name="use_content_for_free">You can now use this premium content for free</string>
+    <string name="AD_MOB_ENABLED_BANNER">true</string>
+    <string name="hint_password">Password</string>
+    <string name="forgot_password">Forgot password ?</string>
+    <string name="password_confirm_message">The entered passwords don\'t match.</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="done">Finish</string>
+    <string name="hint_reset_code">Reset code</string>
+    <string name="i_have_the_code">I have the code</string>
+    <string name="hint_password_confirm">Confirm password</string>
+    <string name="change_password">Change password</string>
+    <string name="new_password">New password</string>
+    <string name="confirm_new_password">Confirm new password</string>
+    <string name="old_password">Old password</string>
+    <string name="select_payment_method">Please choose a payment method</string>
+    <string name="operation_canceller">Operation canceled!</string>
+    <string name="select_your_plan">Select a plan</string>
+    <string name="select_plan">Please Select a plan</string>
+    <string name="enter_your_payment_details">Details for payment</string>
+    <string name="continue_string">KEEP ON GOING</string>
+    <string name="payment_transaction_id">Transaction N °</string>
+    <string name="other_payment_infos">Other information for payment</string>
+    <string name="accept_privacy_policy_error">You should accept the privacy policy before login</string>
+    <string name="my_list">My favourites</string>
+    <string name="click_to_upload_file_here">Import the file here</string>
+
+
+    <string name="register">Register</string>
+    <string name="login1">Login</string>
+    <string name="annulProcess">You canceled the connection process! </string>
+    <string name="fullname">Enter full name</string>
+    <string name="bAnnonce">TRAILER</string>
+    <string name="regarder">WATCH</string>
+
+
+    <!-- Dialog example -->
+    <string name="dialog_example_button_positive">YES</string>
+    <string name="dialog_example_button_negative">NO</string>
+    <string name="dialog_example_button_toast_positive_clicked">Added successfully</string>
+    <string name="dialog_example_button_toast_negative_clicked">Canceled</string>
+
+    <string name="browse_title"><![CDATA[Android TV]]></string>
+    <string name="addFavoris">Are you sure you want to bookmark this video ?</string>
+    <string name="eltIndisponible">Unavailable item</string>
+    <string name="sloganCinaf">CINAF King of Cameroonian streaming</string>
+
+    <string name="url_principal">https://cinaf.fr/api/first/4F5A9C3D9A86FA54EACEDDD635185/d506abfd–9fe2–4b71-b979-feff21bcad13/</string>
+    <string name="selectedLanguage">Language already selected!</string>
+    <string name="idCode">ID CODE</string>
+    <string name="send">Envoyer</string>
+    <string name="insertIdCode">INSERT YOUR ID</string>
+    <string name="insertIdCodeDesc"> Your ID is provided after subscribing to a subscription</string>
+    <string name="infoEnTeteAlertDialog">Information</string>
+    <string name="changeLanguage">Please tick a box to change language</string>
+    <string name="langue">Select a language</string>
+
+    <string name="confirmExit">Confirm Exit..!!!</string>
+    <string name="confirmExitMsg">Are you sure you want to exit ?</string>
+    <string name="oui">Yes</string>
+    <string name="non">No</string>
+
+    <string name="videos_loading_error">Failed to load videos. Please check your network connection.</string>
+    <string name="error_fragment_message">An error occurred</string>
+    <string name="dismiss_error">Dismiss</string>
+    <string name="related_movies">Related Videos</string>
+    <string name="stateSubscribed">Your ID does not have a subscription</string>
+</resources>
