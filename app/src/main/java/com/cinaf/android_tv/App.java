@@ -1,6 +1,9 @@
 package com.cinaf.android_tv;
 
 import android.app.Application;
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.widget.Toast;
 
 import androidx.lifecycle.ProcessLifecycleOwner;
@@ -70,6 +73,18 @@ public class App extends Application {
                     Toast.LENGTH_LONG)
                     .show();
         }
+    }
+
+
+
+    //Check connexion network
+    public static boolean hasNetwork () {
+        return instance.checkIfHasNetwork();
+    }
+    private boolean checkIfHasNetwork() {
+        ConnectivityManager cm = (ConnectivityManager) getSystemService( Context.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = cm.getActiveNetworkInfo();
+        return networkInfo != null && networkInfo.isConnectedOrConnecting();
     }
 
 }
