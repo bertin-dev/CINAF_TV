@@ -28,6 +28,7 @@ import retrofit2.converter.moshi.MoshiConverterFactory;
 @Module
 public class HttpClientModule {
 
+    private static final String TAG = "HttpClientModule";
     private static final long DISK_CACHE_SIZE = 50 * 1024 * 1024; // 50MB
     private static final String HEADER_PRAGMA = "Pragma";
     private static final String HEADER_CACHE_CONTROL = "Cache-Control";
@@ -66,7 +67,7 @@ public class HttpClientModule {
         return new Interceptor() {
             @Override
             public Response intercept(Chain chain) throws IOException {
-                Log.w("TAG", "offlineInterceptor: called" );
+                Log.w(TAG, "offlineInterceptor: called" );
                 Request request = chain.request();
 
                 //prevent caching when network is on. For that we use the "networkInterceptor"
@@ -91,7 +92,7 @@ public class HttpClientModule {
         return new Interceptor() {
             @Override
             public Response intercept(Chain chain) throws IOException {
-                Log.w("TAG", "network intercept: called" );
+                Log.w(TAG, "network intercept: called" );
 
                 Response response = chain.proceed(chain.request());
                 CacheControl cacheControl = new CacheControl.Builder()
@@ -110,7 +111,7 @@ public class HttpClientModule {
         HttpLoggingInterceptor httpLoggingInterceptor = new HttpLoggingInterceptor(new HttpLoggingInterceptor.Logger() {
             @Override
             public void log(String message) {
-                Log.w("TAG", "log: http log" + message);
+                Log.w(TAG, "log: http log" + message);
             }
         });
         httpLoggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
