@@ -1,6 +1,7 @@
 package com.cinaf.android_tv.ui.detail;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import com.cinaf.android_tv.data.models.Poster;
 import com.cinaf.android_tv.ui.base.BaseTVActivity;
@@ -8,6 +9,7 @@ import com.cinaf.android_tv.ui.base.BaseTVActivity;
 
 public class DetailPosterActivity extends BaseTVActivity {
 
+    private static final String TAG = "DetailPosterActivity";
     //GlideBackgroundManager glideBackgroundManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,6 +17,9 @@ public class DetailPosterActivity extends BaseTVActivity {
 
         //Poster
         Poster poster = getIntent().getExtras().getParcelable(Poster.class.getSimpleName());
+
+        Log.w(TAG, "bindNewsResponse: " + poster );
+        Log.w(TAG, "bindNewsResponse1: " + poster.getTrailer().getUrl() );
 
         DetailPosterFragment detailPosterFragment = DetailPosterFragment.newInstance(poster);
         addFragment(detailPosterFragment);

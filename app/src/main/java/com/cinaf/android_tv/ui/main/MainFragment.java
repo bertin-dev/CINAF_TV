@@ -142,8 +142,8 @@ public class MainFragment extends BrowseFragment implements LoaderManager.Loader
         getLoaderManager().initLoader(0, null, this);
         //glideBackgroundManager.setBackground(ContextCompat.getDrawable(getActivity(), R.drawable.placeholder));
         glideBackgroundManager.setBackgroundColors(Color.parseColor("#FF263238"));
-        getMainFragmentRegistry().registerFragment(PageRow.class, new PageRowFragmentFactory());
-        //getMainFragmentRegistry().registerFragment(PageRow.class, new PageRowFragmentFactory(glideBackgroundManager));
+        //getMainFragmentRegistry().registerFragment(PageRow.class, new PageRowFragmentFactory());
+        getMainFragmentRegistry().registerFragment(PageRow.class, new PageRowFragmentFactory(glideBackgroundManager));
     }
 
     private void setupUIElements() {
@@ -243,11 +243,11 @@ public class MainFragment extends BrowseFragment implements LoaderManager.Loader
 
 
     public static class PageRowFragmentFactory extends FragmentFactory {
-        /*private final GlideBackgroundManager mBackgroundManager;
+        private final GlideBackgroundManager mBackgroundManager;
 
         PageRowFragmentFactory(GlideBackgroundManager backgroundManager) {
             this.mBackgroundManager = backgroundManager;
-        }*/
+        }
 
         @Override
         public Fragment createFragment(Object rowObj) {
